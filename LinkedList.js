@@ -10,7 +10,7 @@ class LinkedList {
 
     /**
      * Creates a new node where next points to null.
-     * This method is a helper method and should not be called by the user.
+     * This method is a helper method and should not be called by the user directly.
      * @param {*} element 
      * @returns Node
      */
