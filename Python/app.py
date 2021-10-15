@@ -7,7 +7,4 @@ linkedList.push(20)
 linkedList.push(30)
 linkedList.push(40)
 
-print(linkedList.toString())
-linkedList.remove(2)
-print(linkedList.toString())
 linkedList.print()

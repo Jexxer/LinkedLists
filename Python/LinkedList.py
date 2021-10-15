@@ -99,7 +99,7 @@ class LinkedList:
             current = self.head
 
             for i in range(self.length):
-                arr.append(current)
+                arr.append(current.data)
                 current = current.next
 
         print(arr)
