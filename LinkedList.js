@@ -19,6 +19,7 @@ class LinkedList {
     }
 
     /**
+     * Big O: O(n)
      * This method will push a new element to the end of the LinkedList.
      * @param {*} element
      * @returns new length of LinkedList  
@@ -43,6 +44,7 @@ class LinkedList {
     }
 
     /**
+     * Big O: O(n)
      * Inserts element to specified index of linked list, if index is not given, will insert at 0th index.
      * @param {*} element 
      * @param {*} index 
@@ -73,7 +75,12 @@ class LinkedList {
         this.length++;
         return true;
     }
-
+    /**
+     * Big O: O(n)
+     * Helper function to iterate through LinkedList and returns whole Node of param specified index.
+     * @param {*} index 
+     * @returns Node
+     */
     getNodeAt(index){
         // If the user specified index is out of range, return null.
         if(index === undefined || index < 0 || index >= this.length) return null;
@@ -92,6 +99,7 @@ class LinkedList {
     }
 
     /**
+     * Big O: O(n)
      * Returns the value/element of the user specified index
      * @param {Number} Integer
      * @returns Value of Node
@@ -103,6 +111,7 @@ class LinkedList {
     }
 
     /**
+     * Big O: O(n)
      * Takes Integer as param and removes Node at that index in the LinkedList.
      * @param {number} index 
      * @returns Integer
@@ -132,6 +141,7 @@ class LinkedList {
         return removedNode.element;
     }
     /**
+     * Big O: O(n)
      * Iterates through linked list and compares param to element of each node. Return index of element with match, otherwise -1.
      * @param {*} element 
      * @returns {Number} Integer
@@ -155,6 +165,7 @@ class LinkedList {
     }
 
     /**
+     * Big O: O(n)
      * Iterates through to LinkedList and returns true in param element is a Node value in LinkedList.
      * @param {*} element 
      * @returns 
@@ -164,6 +175,7 @@ class LinkedList {
     }
 
     /**
+     * Big O: O(n)
      * Iterates through the LinkedList and returns the values in sequencial order. Head -> 1 -> 2 -> 3 -> Tail. Seperated by comma.
      * @returns String
      */
@@ -184,6 +196,7 @@ class LinkedList {
     }
 
     /**
+     * Big O: O(n)
      * Console logs LinkedList in array format.
      */
     print(){
